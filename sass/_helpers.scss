@@ -1,0 +1,103 @@
+$yellowColor : #f7c552;
+$blueColor : #33c1cf;
+$brandColor : #f89624;
+
+
+$maxMobile: "(max-width: 767px)";
+$maxSmall: "(max-width: 991px)";
+$minSmall: "(min-width: 768px)";
+$minMedium: "(min-width: 992px)";
+$minLarge: "(min-width: 1200px)";
+
+
+//OVERLAY
+@mixin overlay($color) {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background: $color;
+}
+
+
+//PREFIXER
+@mixin prefixer($property, $value, $prefixes: ()) {
+    @each $prefix in $prefixes {
+        #{'-' + $prefix + '-' + $property}: $value;
+    }
+    #{$property}: $value;
+}
+
+
+//ANIMATION MIXIN
+@mixin keyFrame($animation-name) {
+    @-webkit-keyframes #{$animation-name} {
+        @content;
+    }
+    @-moz-keyframes #{$animation-name} {
+        @content;
+    }
+    @keyframes #{$animation-name} {
+        @content;
+    }
+}
+
+//OPACITY MIXIN
+@mixin opacity($value) {
+    Zoom: 1;
+    $opacity-ie: $value * 100;
+    filter: alpha(opacity = $opacity-ie);
+    opacity: $value;
+}
+
+//PSEUDO ELEMENT 
+@mixin pseudo($display: block, $pos: absolute, $content: ''){
+    content: $content;
+    display: $display;
+    position: $pos;
+}
+
+//VERTICAL CENTERING
+@mixin vertical-center {
+   position: relative;
+   top: 50%;
+   -ms-transform: translateY(-50%);
+   -webkit-transform: translateY(-50%);
+   transform: translateY(-50%);
+}
+
+//ABSOLUTE POSITIONING
+@mixin abs-position ($top, $right, $bottom, $left) {
+   position: absolute; 
+   top: $top;
+   right: $right;
+   bottom: $bottom;
+   left: $left;
+}
+
+//MAKING ARROW
+@mixin arrow($direction: down, $size: 5px, $color: #555) {
+   width: 0;
+   height: 0;
+   @if ($direction == left) {
+      border-top: $size solid transparent;
+      border-bottom: $size solid transparent; 
+      border-right: $size solid $color;
+   }
+   @else if ($direction == right) {
+      border-top: $size solid transparent;
+      border-bottom: $size solid transparent; 
+      border-left: $size solid $color;
+   }
+   @else if ($direction == down) {
+      border-left: $size solid transparent;
+      border-right: $size solid transparent;
+      border-top: $size solid $color;
+   }
+   @else {
+      border-left: $size solid transparent;
+      border-right: $size solid transparent;
+      border-bottom: $size solid $color;
+   }
+}

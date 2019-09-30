@@ -1,0 +1,192 @@
+
+* {
+    text-transform: capitalize;
+    font-family: 'Roboto', arial, sans-serif;
+}
+/*===============
+    start  placeholder
+===============*/
+%transition{
+    @include prefixer(transition, all .2s ease, webkit moz o);
+}
+
+%vertical-center{
+    @include vertical-center()
+}
+
+/*************
+    body
+*************/
+body {
+    position: relative;
+}
+
+/*************
+    ul
+*************/
+ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+/*************
+    section
+*************/
+section {
+    padding: 100px 0;
+}
+
+/*************
+    a (link)
+*************/
+a {
+    outline: none;
+    color: inherit;
+    &:hover {
+        text-decoration: none;
+    }
+}
+
+/*************
+    paragraph
+*************/
+p {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 25px;
+}
+/*************
+    overlay
+*************/
+.overlay {
+    @include overlay(rgba(0, 0, 0, .8));
+    z-index: 100;
+    display: none;
+    .wrapper {
+        @include overlay(transparent);
+        height: 100vh;
+        position: fixed;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        display: none;
+        .img {
+            width: 76%;
+            position: relative;
+            .wrap {
+                img {
+                    width: 100%;
+                    margin-bottom: 5px;
+                    display: none;
+                    &.active {
+                        display: block;
+                    }
+                }    
+            }
+            a {
+                float: right;
+                font-size: 32px;
+                color: #fff;
+                &:hover {
+                    color: #ff3939;
+                }
+            }
+            span {
+                color: white;
+                float: left;
+            }
+            i[class*=fa-chevron] {
+                position: absolute;
+                font-size: 40px;
+                color: white;
+                cursor: pointer;
+                @extend %vertical-center;
+                @include prefixer(text-shadow, 0 0 10px black, webkit moz o)
+            }
+            i.fa-chevron-right {
+                right: 23px;
+            }
+            i.fa-chevron-left {
+                left: 23px;
+            }
+        }    
+    }
+    .contact-form {
+        height: 100vh;
+        width: 100%;
+        position: fixed;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        display: none;
+        form {
+            text-align: center;
+            width: 60%;
+            i{
+                margin-bottom: 100px;
+                background-color: $blueColor;
+                padding: 13px 17px;
+                cursor: pointer;
+                color: #fff;
+                &:hover {
+                    background-color: #333;
+                    @extend %transition;
+                }
+            }
+            > *:not(i){
+                width: 100%;
+                margin-bottom: 30px;
+                padding: 13px;
+                border: none;
+                outline: 0;
+            }
+            textarea{
+                height: 170px;
+            }
+            button{
+                width: auto;
+                background: $brandColor;
+            }
+            ::placeholder {
+                font-size: 13px;
+                font-weight: bold; 
+            }
+        }
+    }
+}
+
+/*************
+    conatiner
+*************/
+@media #{$maxMobile} {
+    .container {
+        max-width: 100%;
+        padding: 0;    
+    }
+    .row {
+        margin: 0;
+    }
+}
+
+/*************
+    button
+*************/
+button {
+    background-color: $blueColor;
+    padding: 10px 20px;
+    border-radius: 30px;
+    outline: 0;
+    border: none;
+    color: white;
+    @extend %transition;
+    &:hover {
+        background-color: #1b8590;;
+    }
+}
+/*************
+    capitlize
+*************/
+.capitlize {
+    text-transform: uppercase;
+}

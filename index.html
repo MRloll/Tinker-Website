@@ -1,17 +1,274 @@
-
+<!DOCTYPE html>
 <html>
   <head>
-    <meta charset="UTF-8"/>
-    <meta meta="meta" name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <meta name="keywords" content="HTML,CSS,XML,JavaScript"/>
-    <meta name="author" content="MR. Loll"/>
-    <title>tinker</title>
-    <link rel="stylesheet" href="css/all.min.css" type="text/css"/>
-    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css"/>
-    <link rel="stylesheet" href="css/app.css" type="text/css"/>
-    <link href="https://fonts.googleapis.com/css?family=Quattrocento+Sans&amp;display=swap" rel="stylesheet"/>
+    <meta charset="UTF-8">
+    <meta meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="HTML,CSS,XML,JavaScript">
+    <meta name="author" content="MR. Loll">
+    <title>Tinker</title>
+    <link rel="stylesheet" href="css/all.min.css" type="text/css">
+    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
+    <link rel="stylesheet" href="css/slick.css" type="text/css">
+    <link rel="stylesheet" href="css/app.css" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Quattrocento+Sans&amp;display=swap" rel="stylesheet">
   </head>
-  <body></body>
+  <body>
+    <!--================-->
+    <!-- starting the nav bra-->
+    <!--================-->
+    <nav>
+      <div class="container">
+        <div class="brand">
+          <h3><strong>T</strong>inker</h3>
+        </div><i class="fas fa-bars"></i>
+        <div class="nav-list">
+          <ul>
+            <li><a href="#" data-id="#home">home</a></li>
+            <li><a href="#" data-id="#about">about us</a></li>
+            <li><a href="#" data-id="#portfolio">portfolio</a></li>
+            <li><a href="#" data-id="#blog">blog</a> </li>
+            <li><a href="#" data-id="#contact">contact us</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!--================-->
+    <!-- starting the header-->
+    <!--================-->
+    <header class="text-center" id="home">
+      <div class="bg"></div>
+      <div class="text-content text-center ml-auto mr-auto">
+        <h4><strong class="capitlize">tinker</strong> <span class="capitlize">html5</span> Template</h4>
+        <p>Tinker is free HTML CSS template that can be used for any kind of website. Please tell your friends about us. Thank you.</p>
+        <button class="capitlize">let's start                            </button>
+      </div>
+    </header>
+    <!--================-->
+    <!-- start about-us-->
+    <!--================-->
+    <section class="about-us text-center" id="about">
+      <div class="container">
+        <div class="row">
+          <div class="item col-md-6 col-lg"><i class="far fa-bell"></i>
+            <h5>Smart Notifications</h5>
+            <hr>
+            <p>Curabitur non risus fringilla libero accumsan molestie et quis justo. Cras aliquam tempor sem, vestibulum facilisis dui. Mauris malesuada porta.</p>
+            <button class="capitlize">continue reading                          </button>
+          </div>
+          <div class="item  col-md-6 col-lg"><i class="far fa-heart"></i>
+            <h5>Lovely Web Design</h5>
+            <hr>
+            <p>Curabitur non risus fringilla libero accumsan molestie et quis justo. Cras aliquam tempor sem, vestibulum facilisis dui. Mauris malesuada porta.</p>
+            <button class="capitlize">continue reading                            </button>
+          </div>
+          <div class="item col-md-6 col-lg"><i class="fas fa-history"></i>
+            <h5>Quick Support</h5>
+            <hr>
+            <p>Curabitur non risus fringilla libero accumsan molestie et quis justo. Cras aliquam tempor sem, vestibulum facilisis dui. Mauris malesuada porta.</p>
+            <button class="capitlize">continue reading                       </button>
+          </div>
+          <div class="item col-md-6 col-lg"><i class="fas fa-cog"></i>
+            <h5>One-Click Setup</h5>
+            <hr>
+            <p>Curabitur non risus fringilla libero accumsan molestie et quis justo. Cras aliquam tempor sem, vestibulum facilisis dui. Mauris malesuada porta.</p>
+            <button class="capitlize">continue reading                          </button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--================-->
+    <!-- start portfolio-->
+    <!--================-->
+    <section class="portfolio" id="portfolio">
+      <div class="container">
+        <div class="row">
+          <div class="text-wrapper col-md-12 col-lg-4">
+            <div class="text-content">
+              <h4 class="capitlize">our gallery</h4>
+              <hr>
+              <p>In malesuada placerat ligula et bibendum. Aenean eget urna enim. Sed enim ante, bibendum nec dictum ac, gravida ac lectus.</p>
+              <ul>
+                <li><a class="active" href="#" data-class=".all">show all</a></li>
+                <li><a href="#" data-class=".brand">branding</a></li>
+                <li><a href="#" data-class=".graphic">graphic</a></li>
+                <li><a href="#" data-class=".nature">nature</a></li>
+                <li><a href="#" data-class=".animation">animation</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="img-wrapper col-md-12  col-lg-8">
+            <div class="row">
+              <div class="img col-6 filter all nature"><a href="#"><img class="img-fluid" src="images/portfolio_big_item_01.jpg" alt="#"></a></div>
+              <div class="img col-6 filter all brand"><a href="#"><img class="img-fluid" src="images/portfolio_big_item_02.jpg"></a></div>
+              <div class="img col-6 filter all graphic"><a href="#"><img class="img-fluid" src="images/portfolio_big_item_03.jpg"></a></div>
+              <div class="img col-6 filter all brand nature"><a href="#"><img class="img-fluid" src="images/portfolio_big_item_04.jpg"></a></div>
+              <div class="img col-6 filter all animation"><a href="#"><img class="img-fluid" src="images/portfolio_big_item_05.jpg"></a></div>
+              <div class="img col-6 filter all animation"><a href="#"><img class="img-fluid" src="images/portfolio_big_item_06.jpg"></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--================-->
+    <!-- start portfolio-->
+    <!--================-->
+    <section class="testem text-center">
+      <div class="container">
+        <div class="slider ml-auto mr-auto">
+          <ul class="items">
+            <li>
+              <p>“ Quisque ullamcorper odio a nisl lacinia dictum. Vestibulum malesuada ipsum in turpis finibus, ut sagittis erat scelerisque. Curabitur non risus fringilla libero accumsan molestie et quis justo. ”</p>
+              <h4>George Rich</h4><span>Web Designer</span>
+            </li>
+            <li>
+              <p>“ Suspendisse magna mauris, convallis vel finibus eget, lobortis dictum neque. Nam tincidunt metus nec eros dignissim consectetur. ”</p>
+              <h4>John Henry</h4><span>New Manager</span>
+            </li>
+            <li>
+              <p>“ Aenean semper aliquam est ut maximus. Fusce id diam eget orci lobortis ultricies at ac velit. Curabitur laoreet massa et fringilla sagittis. ”</p>
+              <h4>Danny Cute</h4><span>CEO Founder</span>
+            </li>
+            <li>
+              <p>“ Maecenas eu odio pharetra, elementum lorem eget, efficitur erat. Duis eget justo non nisi iaculis vestibulum. Aliquam erat volutpat. ”</p>
+              <h4>Richard Beal</h4><span>CSS Developer</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <!--================-->
+    <!-- start blog-->
+    <!--================-->
+    <section class="blog" id="blog">
+      <div class="container">
+        <div class="row">
+          <div class="text-wrapper col-md-12 col-lg-4">
+            <div class="text-content">
+              <h4 class="capitlize">our blog posts</h4>
+              <hr>
+              <p>Nam vulputate elementum nulla, sit amet congue ipsum malesuada pretium. Vivamus vel gravida quam.</p>
+              <ul>
+                <li><a class="active" href="#" data-index="0">Nulla eget convallis augue</a></li>
+                <li><a href="#" data-index="1">Quisque ultricies maximus</a></li>
+                <li><a href="#" data-index="2">Sed vel elit et lorem</a></li>
+                <li><a href="#" data-index="3">Vivamus purus neque</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="img-wrapper col-md-12  col-lg-8">
+            <div class="blog-content active">
+              <div><img class="img-fluid" src="images/blog_item_01.jpg" alt="#"></div>
+              <div class="blog-text">
+                <h4>Nulla eget convallis augue</h4><a href="#">digital marketing / </a><a href="#">a honey / </a><a href="#"> 26 septamper 2017</a>
+                <p>Donec interdum scelerisque auctor. Nulla id lorem auctor, bibendum lectus elementum, porta felis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</p>
+              </div>
+            </div>
+            <div class="blog-content">
+              <div><img class="img-fluid" src="images/blog_item_02.jpg" alt="#"></div>
+              <div class="blog-text">
+                <h4>Nulla eget convallis augue</h4><a href="#">digital marketing / </a><a href="#">a honey / </a><a href="#"> 26 septamper 2017</a>
+                <p>Donec interdum scelerisque auctor. Nulla id lorem auctor, bibendum lectus elementum, porta felis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</p>
+              </div>
+            </div>
+            <div class="blog-content">
+              <div><img class="img-fluid" src="images/blog_item_03.jpg" alt="#"></div>
+              <div class="blog-text">
+                <h4>Nulla eget convallis augue</h4><a href="#">digital marketing / </a><a href="#">a honey / </a><a href="#"> 26 septamper 2017</a>
+                <p>Donec interdum scelerisque auctor. Nulla id lorem auctor, bibendum lectus elementum, porta felis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</p>
+              </div>
+            </div>
+            <div class="blog-content">
+              <div><img class="img-fluid" src="images/blog_item_04.jpg" alt="#"></div>
+              <div class="blog-text">
+                <h4>Nulla eget convallis augue</h4><a href="#">digital marketing / </a><a href="#">a honey / </a><a href="#"> 26 septamper 2017</a>
+                <p>Donec interdum scelerisque auctor. Nulla id lorem auctor, bibendum lectus elementum, porta felis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--================-->
+    <!-- start contaact us-->
+    <!--================-->
+    <section class="contact text-center" id="contact">
+      <div class="container"> 
+        <div class="text-content">
+          <h4 class="capitlize">contact us</h4>
+          <hr>
+          <p>Nunc posuere non quam at pharetra. Mauris tincidunt purus vel ultrices malesuada. Integer euismod erat ut nulla ultrices, ut auctor eros feugiat.</p>
+          <button class="capitlize contact-us">send a message</button>
+        </div>
+      </div>
+    </section>
+    <!--================-->
+    <!-- start map-->
+    <!--================-->
+    <section class="map"><iframe src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d13646.135857140469!2d31.3215974!3d31.2336385!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2seg!4v1569856768789!5m2!1sen!2seg" width="600" height="650" frameborder="0" style="border:0;" allowfullscreen=""></iframe></section>
+    <!--================-->
+    <!-- start footer-->
+    <!--================-->
+    <footer class="text-center text-lg-left">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-lg-2 brand">
+            <div>
+              <h3><strong>T</strong>inker</h3>
+              <p>copy &copy; 2017  Mr Loll.Ink</p><span>design: Mr Loll</span>
+            </div>
+          </div>
+          <div class="hr d-lg-none d-block">
+            <hr>
+          </div>
+          <div class="col-12 col-lg-4 location">
+            <h6>location</h6>
+            <ul class="info">
+              <li>
+                <p>Belqas, Almansoura <br> Governance, Egypt</p>
+              </li>
+              <li>
+                <p> Shawamy Village, <br>Court street</p>
+              </li>
+            </ul>
+          </div>
+          <div class="hr d-lg-none d-block">
+            <hr>
+          </div>
+          <div class="col-12 col-lg-3 more-info">
+            <h6>more info </h6>
+            <p><strong>phone:</strong> +201013194797</p>
+            <p><strong>Email:</strong> walidelloll2018@gmail.com</p>
+          </div>
+          <div class="hr d-lg-none d-block">
+            <hr>
+          </div>
+          <div class="col-12 col-lg-3 social">
+            <h6>get social with us</h6><a href="https://www.facebook.com/walidloll" target="_blank"><i class="fab fa-facebook-f"></i></a><a href="https://www.youtube.com/channel/UCj0ZnTikJkeLfoLE_XrNL8w?view_as=subscriber" target="_blank"><i class="fab fa-youtube"></i></a><a href="https://www.instagram.com/walid.elloll/" target="_blank">                       <i class="fab fa-google-plus-g"></i></a><a href="https://twitter.com/walidelloll" target="_blank"><i class="fab fa-twitter"></i></a><a href="https://www.instagram.com/walid.elloll/" target="_blank"><i class="fab fa-instagram"></i></a>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <div class="footer-overlay"></div>
+    <!--================-->
+    <!-- start overlay-->
+    <!--================-->
+    <div class="overlay">
+      <div class="wrapper">
+        <div class="img">
+          <div class="wrap"></div><a href="#"><i class="fas fa-times"></i></a><i class="fas fa-chevron-left"></i><i class="fas fa-chevron-right"></i>
+        </div>
+      </div>
+      <div class="contact-form">
+        <form><i class="fas fa-times"></i>
+          <input type="text" name="username" placeholder="Your Name...">
+          <input type="email" name="email" placeholder="Your Email...">
+          <textarea name="text" placeholder="Your Message..."></textarea>
+          <button>send a message</button>
+        </form>
+      </div>
+    </div>
+  </body>
   <script src="js/jQuery-3-4-1.min.js"></script>
+  <script src="js/slick.min.js"></script>
   <script src="js/app.js"></script>
 </html>

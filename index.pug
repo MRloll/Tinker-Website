@@ -1,24 +1,264 @@
+doctype
 html
     head
         meta(charset="UTF-8")
         meta(meta name="viewport" content="width=device-width, initial-scale=1.0")
         meta(name="keywords" content="HTML,CSS,XML,JavaScript")
         meta(name="author" content="MR. Loll")
-        title tinker
+        title Tinker
         //- link(rel="shortcut icon" type="image/x-icon" href="images/responsive.ico")
         link(rel="stylesheet" href="css/all.min.css" type="text/css")
         link(rel="stylesheet" href="css/bootstrap.min.css" type="text/css")
+        link(rel="stylesheet" href="css/slick.css" type="text/css")
         link(rel="stylesheet" href="css/app.css" type="text/css")
         link(href="https://fonts.googleapis.com/css?family=Quattrocento+Sans&display=swap" rel="stylesheet")
 
     body
+        //================
+        // starting the nav bra
+        //================
+        nav
+            .container
+                .brand
+                    h3 #[strong T]inker
+                i(class="fas fa-bars")
+                .nav-list
+                    ul
+                        li #[a(href='#' data-id="#home") home]
+                        li #[a(href='#' data-id="#about") about us]
+                        li #[a(href='#' data-id="#portfolio") portfolio]
+                        li #[a(href='#' data-id="#blog") blog] 
+                        li #[a(href='#' data-id="#contact") contact us]
+        //================
+        // starting the header
+        //================
+        header.text-center#home
+            .bg
+            .text-content.text-center.ml-auto.mr-auto
+                h4 #[strong.capitlize tinker] #[span.capitlize html5] Template
+                p Tinker is free HTML CSS template that can be used for any kind of website. Please tell your friends about us. Thank you.
+                button.capitlize let's start                            
 
+        //================
+        // start about-us
+        //================
+        section.about-us.text-center#about
+            .container
+                .row
+                    div(class="item col-md-6 col-lg")
+                        i(class="far fa-bell")
+                        h5 Smart Notifications
+                        hr
+                        p Curabitur non risus fringilla libero accumsan molestie et quis justo. Cras aliquam tempor sem, vestibulum facilisis dui. Mauris malesuada porta.
+                        button.capitlize continue reading                          
+                                        
+                    div(class="item  col-md-6 col-lg")
+                        i(class="far fa-heart")
+                        h5 Lovely Web Design
+                        hr
+                        p Curabitur non risus fringilla libero accumsan molestie et quis justo. Cras aliquam tempor sem, vestibulum facilisis dui. Mauris malesuada porta.
+                        button.capitlize continue reading                            
+                                        
+                    div(class="item col-md-6 col-lg")
+                        i(class="fas fa-history")
+                        h5 Quick Support
+                        hr
+                        p Curabitur non risus fringilla libero accumsan molestie et quis justo. Cras aliquam tempor sem, vestibulum facilisis dui. Mauris malesuada porta.
+                        button.capitlize continue reading                       
+                                        
+                    div(class="item col-md-6 col-lg")
+                        i(class="fas fa-cog")
+                        h5 One-Click Setup
+                        hr
+                        p Curabitur non risus fringilla libero accumsan molestie et quis justo. Cras aliquam tempor sem, vestibulum facilisis dui. Mauris malesuada porta.
+                        button.capitlize continue reading                          
+        //================
+        // start portfolio
+        //================
+        section.portfolio#portfolio
+            .container
+                .row
+                    div(class="text-wrapper col-md-12 col-lg-4")
+                        .text-content
+                            h4.capitlize our gallery
+                            hr
+                            p In malesuada placerat ligula et bibendum. Aenean eget urna enim. Sed enim ante, bibendum nec dictum ac, gravida ac lectus.
+                            ul
+                                li #[a(href="#" class="active" data-class=".all") show all]
+                                li #[a(href="#" data-class=".brand") branding]
+                                li #[a(href="#" data-class=".graphic") graphic]
+                                li #[a(href="#" data-class=".nature") nature]
+                                li #[a(href="#" data-class=".animation") animation]
+                    div(class="img-wrapper col-md-12  col-lg-8")
+                        .row
+                            div(class="img col-6 filter all nature")
+                                a(href="#") #[img(src="images/portfolio_big_item_01.jpg" class="img-fluid" alt="#")]
+                            div(class="img col-6 filter all brand")
+                                a(href="#") #[img(src="images/portfolio_big_item_02.jpg" class="img-fluid")]
+                            div(class="img col-6 filter all graphic")
+                                a(href="#") #[img(src="images/portfolio_big_item_03.jpg" class="img-fluid")]
+                            div(class="img col-6 filter all brand nature")
+                                a(href="#") #[img(src="images/portfolio_big_item_04.jpg" class="img-fluid")]
+                            div(class="img col-6 filter all animation")
+                                a(href="#") #[img(src="images/portfolio_big_item_05.jpg" class="img-fluid")]
+                            div(class="img col-6 filter all animation")
+                                a(href="#") #[img(src="images/portfolio_big_item_06.jpg" class="img-fluid")]
 
+        //================
+        // start portfolio
+        //================
+        section.testem.text-center
+            .container
+                .slider.ml-auto.mr-auto
+                    ul.items
+                        li
+                            p= `“ Quisque ullamcorper odio a nisl lacinia dictum. Vestibulum malesuada ipsum in turpis finibus, ut sagittis erat scelerisque. Curabitur non risus fringilla libero accumsan molestie et quis justo. ”`
+                            h4 George Rich
+                            span Web Designer
+                        li
+                            p= `“ Suspendisse magna mauris, convallis vel finibus eget, lobortis dictum neque. Nam tincidunt metus nec eros dignissim consectetur. ”`
+                            h4 John Henry
+                            span New Manager
+                        li
+                            p= `“ Aenean semper aliquam est ut maximus. Fusce id diam eget orci lobortis ultricies at ac velit. Curabitur laoreet massa et fringilla sagittis. ”`
+                            h4 Danny Cute
+                            span CEO Founder
+                        li
+                            p= `“ Maecenas eu odio pharetra, elementum lorem eget, efficitur erat. Duis eget justo non nisi iaculis vestibulum. Aliquam erat volutpat. ”`
+                            h4 Richard Beal
+                            span CSS Developer
 
+        //================
+        // start blog
+        //================
+        section.blog#blog
+            .container
+                .row
+                    div(class="text-wrapper col-md-12 col-lg-4")
+                        .text-content
+                            h4.capitlize our blog posts
+                            hr
+                            p Nam vulputate elementum nulla, sit amet congue ipsum malesuada pretium. Vivamus vel gravida quam.
+                            ul
+                                li #[a(href="#" class="active" data-index="0") Nulla eget convallis augue]
+                                li #[a(href="#" data-index="1") Quisque ultricies maximus]
+                                li #[a(href="#" data-index="2") Sed vel elit et lorem]
+                                li #[a(href="#" data-index="3") Vivamus purus neque]
+                    div(class="img-wrapper col-md-12  col-lg-8")
+                        div.blog-content.active
+                            div
+                                img(src="images/blog_item_01.jpg" class="img-fluid" alt="#")
+                            div.blog-text
+                                h4 Nulla eget convallis augue
+                                a(href="#") digital marketing / 
+                                a(href="#") a honey / 
+                                a(href="#")  26 septamper 2017
+                                p Donec interdum scelerisque auctor. Nulla id lorem auctor, bibendum lectus elementum, porta felis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
 
+                        div.blog-content
+                            div
+                                img(src="images/blog_item_02.jpg" class="img-fluid" alt="#")
+                            div.blog-text
+                                h4 Nulla eget convallis augue
+                                a(href="#") digital marketing / 
+                                a(href="#") a honey / 
+                                a(href="#")  26 septamper 2017
+                                p Donec interdum scelerisque auctor. Nulla id lorem auctor, bibendum lectus elementum, porta felis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
 
+                        div.blog-content
+                            div
+                                img(src="images/blog_item_03.jpg" class="img-fluid" alt="#")
+                            div.blog-text
+                                h4 Nulla eget convallis augue
+                                a(href="#") digital marketing / 
+                                a(href="#") a honey / 
+                                a(href="#")  26 septamper 2017
+                                p Donec interdum scelerisque auctor. Nulla id lorem auctor, bibendum lectus elementum, porta felis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
 
+                        div.blog-content
+                            div
+                                img(src="images/blog_item_04.jpg" class="img-fluid" alt="#")
+                            div.blog-text
+                                h4 Nulla eget convallis augue
+                                a(href="#") digital marketing / 
+                                a(href="#") a honey / 
+                                a(href="#")  26 septamper 2017
+                                p Donec interdum scelerisque auctor. Nulla id lorem auctor, bibendum lectus elementum, porta felis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
+        //================
+        // start contaact us
+        //================
+        section.contact.text-center#contact
+            .container 
+                .text-content
+                    h4.capitlize contact us
+                    hr
+                    p Nunc posuere non quam at pharetra. Mauris tincidunt purus vel ultrices malesuada. Integer euismod erat ut nulla ultrices, ut auctor eros feugiat.
+                    button.capitlize.contact-us send a message
+        //================
+        // start map
+        //================
+        section.map
+           <iframe src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d13646.135857140469!2d31.3215974!3d31.2336385!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2seg!4v1569856768789!5m2!1sen!2seg" width="600" height="650" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
 
+        //================
+        // start footer
+        //================
+        footer.text-center.text-lg-left
+            .container
+                .row
+                    div(class="col-12 col-lg-2 brand")
+                        div
+                            h3 #[strong T]inker
+                            p copy &copy; 2017  Mr Loll.Ink
+                            span design: Mr Loll
+                    .hr.d-lg-none.d-block
+                        hr
+                    div(class="col-12 col-lg-4 location")
+                        h6 location
+                        ul.info
+                            li
+                                p Belqas, Almansoura #[br] Governance, Egypt
+                            li
+                                p  Shawamy Village, #[br]Court street
+                    .hr.d-lg-none.d-block
+                        hr
+                    div(class="col-12 col-lg-3 more-info")
+                        h6 more info 
+                        p #[strong phone:] +201013194797
+                        p #[strong Email:] walidelloll2018@gmail.com
+                    .hr.d-lg-none.d-block
+                        hr
+                    div(class="col-12 col-lg-3 social")
+                        h6 get social with us
+                        a(href="https://www.facebook.com/walidloll", target="_blank")
+                            i(class="fab fa-facebook-f")
+                        a(href="https://www.youtube.com/channel/UCj0ZnTikJkeLfoLE_XrNL8w?view_as=subscriber" target="_blank")
+                            i(class="fab fa-youtube")
+                        a(href="https://www.instagram.com/walid.elloll/" target="_blank")                        
+                            i(class="fab fa-google-plus-g")
+                        a(href="https://twitter.com/walidelloll", target="_blank")
+                            i(class="fab fa-twitter")
+                        a(href="https://www.instagram.com/walid.elloll/" target="_blank")
+                            i(class="fab fa-instagram")
+        .footer-overlay
 
+        //================
+        // start overlay
+        //================
+        .overlay
+            .wrapper
+                .img
+                    .wrap
+                    a(href="#") #[i(class="fas fa-times")]
+                    i(class="fas fa-chevron-left")
+                    i(class="fas fa-chevron-right")
+            .contact-form
+                form
+                    i(class="fas fa-times" )
+                    input(type="text" name="username" placeholder="Your Name...")
+                    input(type="email" name="email" placeholder="Your Email...")
+                    textarea(name="text" placeholder="Your Message...")
+                    button send a message
     script(src="js/jQuery-3-4-1.min.js")
+    script(src="js/slick.min.js")
     script(src="js/app.js")
